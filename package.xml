@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package>
+    <name>Automatic_Configurables_1dot3</name>
+    <version>0.0.8</version>
+    <stability>stable</stability>
+    <license uri="http://www.opensource.org/licenses/osl-3.0.php">OSL v3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>This extension will help you to automatically create simple products for configurables.</summary>
+    <description>This extension will help you to automatically create simple associated products for configurable products and add them to the grid of associated products. It makes all combinations of attribute values that you will choose. The number of products is not limited. Please remember that you need to save configurable product first to see this module tab.
+Overriden classes:
+Adminhtml_Block_Catalog_Product_Edit_Tab_Super_Config
+And overriden js:
+js/mage/adminhtml/product.js</description>
+    <notes>The wrong js file was included</notes>
+    <authors><author><name>QuartSoft</name><user>auto-converted</user><email>alexeybulash@gmail.com</email></author></authors>
+    <date>2010-05-27</date>
+    <time>20:10:49</time>
+    <contents><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="quickconfigurables.xml" hash="993e213c74431667274ae1c828e983ec"/></dir><dir name="template"><dir name="quickconfigurables"><dir name="catalog"><dir name="product"><dir name="edit"><dir name="super"><file name="config.phtml" hash="5f9fadc3c04b5b2b35c8e05ed57c5160"/></dir></dir></dir></dir></dir></dir></dir></dir></dir></target><target name="mage"><dir name="js"><dir name="qs"><dir name="adminhtml"><file name="product_13.js" hash="e9309efb7632cb134aedee673b0cecaf"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="QS_Quickconfigurables.xml" hash="2fa9d665b16c54645966e27c693935f3"/></dir></target><target name="magelocal"><dir name="QS"><dir name="Quickconfigurables"><dir name="Block"><dir name="Adminhtml"><dir name="Catalog"><dir name="Product"><dir name="Edit"><dir name="Tab"><dir name="Super"><dir name="Config"><file name="Combination.php" hash="ad3779c9daf8b0bf21bf7a2a168db03a"/></dir><file name="Config.php" hash="ff0bf25c35bb5069e847e3230ce56eeb"/></dir></dir></dir></dir></dir></dir></dir><dir name="controllers"><dir name="Adminhtml"><file name="ProductController.php" hash="1f62f04b1d3005c5064278ee790aedd6"/></dir></dir><dir name="etc"><file name="config.xml" hash="72157ba83c8281b13b0b4235328355e8"/></dir><dir name="Helper"><file name="Data.php" hash="a5651545c4121211e4fae9de2a5eddf7"/></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies/>
+</package>

@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * Adminhtml catalog super product configurable create combinations tab
+ *
+ * @category   QS
+ * @package    QS_Quickconfigurables
+ * @author     Quart-soft Magento Team <info@quart-soft.com> 
+ * @copyright  Copyright (c) 2010 Quart-soft Ltd http://quart-soft.com
+ */
+-->
+<config>
+    <modules>
+        <QS_Quickconfigurables>
+            <version>0.1.0</version>
+        </QS_Quickconfigurables>
+    </modules>
+    <frontend>
+        <routers>
+            <quickconfigurables>
+                <use>standard</use>
+                <args>
+                    <module>QS_Quickconfigurables</module>
+                    <frontName>quickconfigurables</frontName>
+                </args>
+            </quickconfigurables>
+        </routers>
+    </frontend>
+	<adminhtml>	
+        <layout>
+            <updates>
+                <quickconfigurables>
+                    <file>quickconfigurables.xml</file>
+                </quickconfigurables>
+            </updates>
+        </layout>
+    </adminhtml>	
+    <admin>
+        <routers>
+			<quickconfigurables>
+				<use>admin</use>
+				<args>
+					<module>QS_Quickconfigurables</module>
+					<frontName>quickconfigurables</frontName>
+				</args>
+			</quickconfigurables>
+        </routers>
+    </admin>
+    <global>
+        <models>
+            <quickconfigurables>
+                <class>QS_Quickconfigurables_Model</class>
+            </quickconfigurables>
+        </models>
+        <resources>
+            <quickconfigurables_setup>
+                <setup>
+                    <module>QS_Quickconfigurables</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </quickconfigurables_setup>
+            <quickconfigurables_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </quickconfigurables_write>
+            <quickconfigurables_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </quickconfigurables_read>
+        </resources>
+        <blocks>
+            <quickconfigurables>
+                <class>QS_Quickconfigurables_Block</class>
+            </quickconfigurables>
+			<adminhtml>
+				<rewrite>
+					<catalog_product_edit_tab_super_config>QS_Quickconfigurables_Block_Adminhtml_Catalog_Product_Edit_Tab_Super_Config</catalog_product_edit_tab_super_config>
+				</rewrite>
+			</adminhtml>
+        </blocks>
+        <helpers>
+            <quickconfigurables>
+                <class>QS_Quickconfigurables_Helper</class>
+            </quickconfigurables>
+        </helpers>
+    </global>
+</config>
